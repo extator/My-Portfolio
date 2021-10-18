@@ -2,8 +2,8 @@ import "./contact.scss"
 
 const Contact = () => {   
     return (
-        <div>
-            
+        <div className="contact">
+            {/* Contact */}
         </div>
     )
 }

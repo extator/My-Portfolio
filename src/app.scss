@@ -1,0 +1,17 @@
+.app{
+    height: 100vh;
+    margin: -8px; //office pc is have blank space 8px for all side
+    
+    .sections{
+        width: 100%;
+        height: calc(100vh - 50px);
+        background-color: #2b2d42;
+        position: relative;
+        top: 50px;
+
+        >*{   //this is effective every tags under class "sections" layout
+            width: 100vw;
+            height: calc(100vh - 100px);
+        }
+    }
+}
