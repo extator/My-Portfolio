@@ -1,6 +1,6 @@
 .app{
     height: 100vh;
-    margin: -8px; //office pc is have blank space 8px for all side
+    // margin: -8px; //office pc is have blank space 8px for all side
     
     .sections{
         width: 100%;
@@ -8,10 +8,16 @@
         background-color: #2b2d42;
         position: relative;
         top: 50px;
+        scroll-snap-type: y mandatory; //scollbar add in web not from browser
+        scrollbar-width: none; //hide scrollbar for firefox
+        &::-webkit-scrollbar{
+            display: none; //command to hide scrollbar from browser
+        }
 
         >*{   //this is effective every tags under class "sections" layout
             width: 100vw;
             height: calc(100vh - 100px);
+            scroll-snap-align: start; //start point off scrolling. when you scrolling normally it will start on the next component
         }
     }
 }
