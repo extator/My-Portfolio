@@ -4,10 +4,11 @@
     
     .sections{
         width: 100%;
-        height: calc(100vh - 50px);
+        height: calc(100vh - 60px);
         background-color: #2b2d42;
         position: relative;
-        top: 50px;
+        top: 60px;
+        scroll-behavior: smooth; //make
         scroll-snap-type: y mandatory; //scollbar add in web not from browser
         scrollbar-width: none; //hide scrollbar for firefox
         &::-webkit-scrollbar{

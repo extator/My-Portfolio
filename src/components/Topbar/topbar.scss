@@ -1,10 +1,26 @@
 @import "../../global.scss";
 
 .topbar{
-    background-color: $topbarColor; //color value from global.scss
+    background-color: #202020; 
+    color: $topbarTextColor; //color value from global.scss
     width: 100%;
-    height: 50px;
+    height: 60px;
     position: fixed;
     top: 0 ;
     z-index: 2; //make this component stand front off others
+
+    .wrapper{
+        padding:5px 15px; //top-down 5px left-right 10px,if have 4 is up right down left
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .logo{
+            font-size: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            color: inherit; //same with main color 
+
+        }
+}
 }

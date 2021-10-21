@@ -2,8 +2,8 @@ import "./works.scss"
 
 const Works = () => {
     return (
-        <div className="works">
-            {/* Works */}
+        <div className="works" id="works">
+            Works
         </div>
     )
 }
