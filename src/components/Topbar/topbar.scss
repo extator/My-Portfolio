@@ -14,13 +14,66 @@
         display:flex;
         align-items: center;
         justify-content: space-between;
-        
-        .logo{
-            font-size: 30px;
-            font-weight: 700;
-            text-decoration: none;
-            color: inherit; //same with main color 
 
+            .left{
+            display: flex;
+            align-items: center;
+            
+                .logo{
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    color: inherit; //same with main color 
+                    margin-right: 40px;
+                    }
+
+                .itemcontainer{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 30px;
+
+                    .icon{
+                        font-style: 18px;
+                        margin-right: 5px;
+                    }
+                    
+                    span{
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+
+                .hamburger {
+                    width: 25px;
+                    height: 21px;
+                    display: flex;
+                    cursor: pointer;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    span{
+                        width: 100%;
+                        height: 3px;
+                        background-color: $topbarTextColor;
+                        margin: 2px;
+                    }
+            }
         }
-}
+    }
+    &.active{
+        background-color: $topbarTextColor;
+        color: #202020;
+
+        .hamburger{
+            span{
+                &:first-child{
+                    
+                }
+            }
+        }
+    }
 }
