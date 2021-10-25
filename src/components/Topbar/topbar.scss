@@ -7,7 +7,8 @@
     height: 60px;
     position: fixed;
     top: 0 ;
-    z-index: 2; //make this component stand front off others
+    z-index: 3; //make this component stand front off others
+    transition: all 1s ease; //transition from topbar and topbar-active animation complete in 1 sec for smooth
 
     .wrapper{
         padding:5px 15px; //top-down 5px left-right 10px,if have 4 is up right down left
@@ -18,14 +19,21 @@
             .left{
             display: flex;
             align-items: center;
+
             
                 .logo{
-                    font-size: 30px;
-                    font-weight: 700;
-                    text-decoration: none;
-                    color: inherit; //same with main color 
-                    margin-right: 40px;
+                font-size: 30px;
+                font-weight: 700;
+                text-decoration: none;
+                color: inherit; //same with main color 
+                margin-right: 40px;
+                
+                    .caticon{
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 5px;
                     }
+                }
 
                 .itemcontainer{
                     display: flex;
@@ -48,7 +56,7 @@
                 align-items: center;
 
                 .hamburger {
-                    width: 25px;
+                    width: 20px;
                     height: 21px;
                     display: flex;
                     cursor: pointer;
@@ -60,6 +68,8 @@
                         height: 3px;
                         background-color: $topbarTextColor;
                         margin: 2px;
+                        transform-origin: left;
+                        transition: all 2s ease;
                     }
             }
         }
@@ -69,9 +79,17 @@
         color: #202020;
 
         .hamburger{
-            span{
-                &:first-child{
-                    
+            span{ //from first-child to last-child is all class under mother-class(hambuger) sorting by first to last class
+                &:first-child{ 
+                    background-color: #202020;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: #202020;
+                    transform: rotate(-45deg);
                 }
             }
         }

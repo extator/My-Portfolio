@@ -17,7 +17,7 @@
 
         >*{   //this is effective every tags under class "sections" layout
             width: 100vw;
-            height: calc(100vh - 100px);
+            height: calc(100vh - 60px);
             scroll-snap-align: start; //start point off scrolling. when you scrolling normally it will start on the next component
         }
     }
