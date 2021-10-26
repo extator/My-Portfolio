@@ -2,7 +2,7 @@
 
 .topbar{
     background-color: #202020; 
-    color: $topbarTextColor; //color value from global.scss
+    color: $mainColor; //color value from global.scss
     width: 100%;
     height: 60px;
     position: fixed;
@@ -66,16 +66,16 @@
                     span{
                         width: 100%;
                         height: 3px;
-                        background-color: $topbarTextColor;
+                        background-color: $mainColor;
                         margin: 2px;
                         transform-origin: left;
-                        transition: all 2s ease;
+                        transition: all 1s ease;
                     }
             }
         }
     }
     &.active{
-        background-color: $topbarTextColor;
+        background-color: $mainColor;
         color: #202020;
 
         .hamburger{
