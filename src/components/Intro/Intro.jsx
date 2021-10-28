@@ -17,14 +17,14 @@ const Intro = () => {
         <div className="intro" id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="assets/catroll.png" alt="profilePic" />
+                    <img src="assets/my-intro-pics.png" alt="profilePic" />
                 </div>
             </div>
             <div className="right">
                 <div className="wrapper">
                     <h2>Hi There, I'm</h2>
-                    <h1>Your Name</h1>
-                    <h3>Sleepless Fatty 
+                    <h1>Mongkol Narkkong</h1>
+                    <h3>Sleepless 
                         <span ref={textRef}></span>
                     </h3>
                 </div>

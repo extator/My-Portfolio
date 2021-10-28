@@ -157,3 +157,39 @@ export const sliderData = [
           "https://weandthecolor.com/wp-content/uploads/2019/11/The-Different-Types-of-Graphic-Design.jpg",
       },
 ]
+export const testmonialsData = [
+    {
+        id: 1,
+        name: "kingduncan__",
+        title: "Fat...no, Fluffy cat on IG",
+        img:
+        "assets/cat2.jpg",
+        icon: "assets/instagram.png",
+        link:"https://www.instagram.com/kingduncan__/",
+        desc:
+        "Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow (Hire him please. 😉)",
+    },
+    {
+        id: 2,
+        name: "brownsucar_ddang",
+        title: "Celeb cat on IG",
+        img:
+        "assets/cat1.jpg",
+        icon: "assets/instagram.png",
+        link:"https://www.instagram.com/brownsugar_ddang/",
+        desc:
+        "Meow Meow Meow Meow Meow Meow Meow Meow Meow Meow (Hire him! Human!)",
+        featured: true,
+        },
+      {
+        id: 3,
+        name: "POPCAT",
+        title: "POPCAT",
+        img:
+          "assets/cat3.jpg",
+        icon: "assets/globe.png",
+        link:"https://popcat.click/",
+        desc:
+          "POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP POP",
+      },
+]

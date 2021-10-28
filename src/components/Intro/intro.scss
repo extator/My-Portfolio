@@ -4,11 +4,14 @@
 
     .left{
         flex: 0.5; //display showing ratio
+        display: flex;
+        align-items: center;
+        justify-content: center;
         overflow: hidden;
 
         .imgContainer{
-            width: 650px;
-            height: 650px;
+            width: 800px;
+            height: 800px;
             background-color: crimson;
             border-radius: 50%;
             display: flex;
@@ -19,6 +22,7 @@
 
             img{
                 height: 90%;
+                margin-right: 30px;
             }
         }
     }
