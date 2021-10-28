@@ -4,6 +4,7 @@
 
     .left{
         flex: 0.5; //display showing ratio
+        overflow: hidden;
 
         .imgContainer{
             width: 650px;
@@ -14,6 +15,7 @@
             align-items: flex-end;
             justify-content: center;
             float: right;
+            margin: 10px;
 
             img{
                 height: 90%;
@@ -23,6 +25,7 @@
 
     .right{
         flex: 0.5;
+        position: relative;
 
         .wrapper{
             width: 100%;
