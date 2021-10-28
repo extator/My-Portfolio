@@ -23,6 +23,14 @@ const Contact = () => {
                     <button type="submit">Send</button>
                     {message && <span>Thanks, I'll reply ASAP :) </span>}
                 </form>
+                <div className="contactLink">
+                <a href="https://www.linkedin.com/in/mongkol-narkkong/" className="linkedin">
+                <img src="assets/linkedin.png" alt="" />
+                </a>
+                <a href="https://github.com/extator" className="github">
+                <img src="assets/github.png" alt="" />
+                </a>
+                </div>
             </div>
         </div>
     )

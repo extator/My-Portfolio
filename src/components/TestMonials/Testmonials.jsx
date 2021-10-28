@@ -4,10 +4,6 @@ import { testmonialsData } from "../../data"
 const Testmonial = () => {
 
     const cardData = testmonialsData
-    console.log(cardData);
-    cardData.map((d=>{
-        console.log('',d);
-    }))
 
     return (
         <div className="testmonials" id="testmonials">

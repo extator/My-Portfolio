@@ -12,7 +12,7 @@ const Topbar = ({menuOpen,setMenuOpen}) => {
                     </a> 
                 <div className="itemcontainer"> {/* some info */}
                     <EmailIcon className="icon"/>
-                    <span>mongkol.narkkong@gmail.com</span>
+                    <span onClick={() =>  navigator.clipboard.writeText('mongkol.narkkong@gmail.com')}>mongkol.narkkong@gmail.com</span>
                 </div>
                 </div>
                 <div className="right">{/* hamburger menu*/}

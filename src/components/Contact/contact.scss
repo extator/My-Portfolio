@@ -6,9 +6,9 @@
   color: #fff;
   font-size: 20px;
 
-//   @include mobile {
-//     flex-direction: column;
-//   }
+  @include mobile {
+    flex-direction: column;
+  }
 
   .left {
     flex: 1;
@@ -43,10 +43,10 @@
         height: 30px;
         font-size: 14px;
 
-        // @include mobile {
-        //   width: 200px;
-        //   height: 20px;
-        // }
+        @include mobile {
+          width: 200px;
+          height: 20px;
+        }
       }
 
       textarea {
@@ -54,10 +54,10 @@
         height: 200px;
         font-size: 15px;
 
-        // @include mobile {
-        //   width: 200px;
-        //   height: 100px;
-        // }
+        @include mobile {
+          width: 200px;
+          height: 100px;
+        }
       }
 
       button {
@@ -78,6 +78,39 @@
 
       span {
         color: green;
+      }
+    }
+
+    .contactLink{
+      display: flex;
+      justify-content: center;
+
+      .linkedin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        text-decoration: none;
+        img{
+          width: 50px;
+          height: 50px;
+          margin-right: 10px;
+          border-radius: 5px;
+        }
+      }
+      .github{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        overflow: hidden;
+        text-decoration: none;
+        
+        img{
+          width: 50px;
+          height: 50px;
+          margin-right: 10px;
+          border-radius: 50%;
+        }
       }
     }
   }
